@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dermatologist Near Panama City Beach FL | Sun Dermatology | Dr. Sunseri</title>
+    <meta name="description" content="Looking for a dermatologist near Panama City Beach, Florida? Sun Dermatology serves PCB residents with skin cancer treatment, Mohs surgery, Botox & cosmetic dermatology. Just 15 minutes away.">
+    <meta name="keywords" content="dermatologist Panama City Beach FL, skin doctor PCB, Mohs surgery Panama City Beach, Botox Panama City Beach, dermatology near me Panama City Beach">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --sun-gold: #D4A836;
+            --sun-orange: #E8913A;
+            --warm-cream: #FDF8F3;
+            --deep-navy: #1a3a5c;
+            --text-dark: #2d3748;
+            --text-muted: #5a6a7a;
+            --white: #ffffff;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Open Sans', sans-serif; color: var(--text-dark); line-height: 1.7; }
+        h1, h2, h3, h4 { font-family: 'Playfair Display', serif; font-weight: 600; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        .top-bar { background: var(--deep-navy); color: var(--white); padding: 10px 0; font-size: 14px; }
+        .top-bar .container { display: flex; justify-content: space-between; }
+        .top-bar a { color: var(--sun-gold); text-decoration: none; }
+        
+        header { background: var(--white); padding: 20px 0; box-shadow: 0 2px 10px rgba(0,0,0,0.08); }
+        header .container { display: flex; justify-content: space-between; align-items: center; }
+        
+        .logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+        .logo-icon {
+            width: 50px; height: 50px;
+            background: linear-gradient(135deg, var(--sun-gold), var(--sun-orange));
+            border-radius: 50%; display: flex; align-items: center; justify-content: center;
+        }
+        .logo-icon svg { width: 30px; height: 30px; fill: var(--white); }
+        .logo-text h1 { font-size: 24px; color: var(--deep-navy); }
+        .logo-text span { font-size: 12px; color: var(--text-muted); }
+        
+        nav ul { display: flex; list-style: none; gap: 32px; }
+        nav a { text-decoration: none; color: var(--text-dark); font-weight: 500; }
+        nav a:hover { color: var(--sun-orange); }
+        
+        .btn { display: inline-block; padding: 14px 28px; border-radius: 6px; font-weight: 600; text-decoration: none; }
+        .btn-primary { background: linear-gradient(135deg, var(--sun-gold), var(--sun-orange)); color: var(--white); }
+        
+        /* Hero */
+        .page-hero {
+            background: linear-gradient(135deg, var(--deep-navy), #234b6e);
+            padding: 80px 0;
+            color: var(--white);
+            text-align: center;
+        }
+        .page-hero h1 { font-size: 44px; margin-bottom: 20px; }
+        .page-hero h1 span { color: var(--sun-gold); }
+        .page-hero p { font-size: 18px; opacity: 0.9; max-width: 700px; margin: 0 auto 30px; }
+        
+        .distance-badge {
+            display: inline-flex; align-items: center; gap: 10px;
+            background: rgba(255,255,255,0.1); padding: 12px 24px;
+            border-radius: 50px; font-size: 16px;
+        }
+        .distance-badge svg { width: 24px; height: 24px; fill: var(--sun-gold); }
+        
+        /* Content */
+        .content-section { padding: 80px 0; }
+        .content-section.alt { background: var(--warm-cream); }
+        
+        .content-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+        
+        .content-text h2 { font-size: 36px; color: var(--deep-navy); margin-bottom: 20px; }
+        .content-text p { color: var(--text-muted); margin-bottom: 16px; }
+        .content-text ul { margin: 20px 0; padding-left: 20px; }
+        .content-text li { color: var(--text-muted); margin-bottom: 10px; }
+        
+        .content-image img {
+            width: 100%; border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.12);
+        }
+        
+        /* Services Grid */
+        .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-top: 40px; }
+        .service-card {
+            background: var(--white); padding: 30px; border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06); text-align: center;
+            transition: transform 0.3s;
+        }
+        .service-card:hover { transform: translateY(-5px); }
+        .service-card h3 { font-size: 20px; color: var(--deep-navy); margin-bottom: 12px; }
+        .service-card p { color: var(--text-muted); font-size: 14px; margin-bottom: 16px; }
+        .service-card a { color: var(--sun-orange); text-decoration: none; font-weight: 600; }
+        
+        /* Directions */
+        .directions { padding: 80px 0; background: var(--warm-cream); }
+        .directions h2 { font-size: 36px; color: var(--deep-navy); margin-bottom: 30px; text-align: center; }
+        
+        .directions-content { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+        .directions-text { background: var(--white); padding: 30px; border-radius: 12px; }
+        .directions-text h3 { font-size: 22px; color: var(--deep-navy); margin-bottom: 16px; }
+        .directions-text p { color: var(--text-muted); margin-bottom: 12px; }
+        .directions-text strong { color: var(--deep-navy); }
+        
+        .map-container { border-radius: 12px; overflow: hidden; box-shadow: 0 10px 40px rgba(0,0,0,0.1); }
+        .map-container iframe { width: 100%; height: 400px; border: none; }
+        
+        /* CTA */
+        .cta { background: linear-gradient(135deg, var(--deep-navy), #234b6e); padding: 80px 0; text-align: center; }
+        .cta h2 { font-size: 40px; color: var(--white); margin-bottom: 16px; }
+        .cta p { color: rgba(255,255,255,0.8); font-size: 18px; margin-bottom: 30px; }
+        
+        /* Footer */
+        footer { background: #0f2439; color: var(--white); padding: 40px 0; text-align: center; }
+        footer p { opacity: 0.7; font-size: 14px; }
+        footer a { color: var(--sun-gold); text-decoration: none; }
+        
+        @media (max-width: 992px) {
+            .content-grid, .directions-content { grid-template-columns: 1fr; }
+            .services-grid { grid-template-columns: 1fr 1fr; }
+        }
+        @media (max-width: 768px) {
+            nav { display: none; }
+            .services-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <div class="container">
+            <span>📍 645 North HWY 231, Panama City, FL 32405</span>
+            <span>Call us: <a href="tel:8502153612">(850) 215-3612</a></span>
+        </div>
+    </div>
+    
+    <header>
+        <div class="container">
+            <a href="../index.html" class="logo">
+                <div class="logo-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2L8.5 8.5 2 12l6.5 3.5L12 22l3.5-6.5L22 12l-6.5-3.5L12 2z"/></svg>
+                </div>
+                <div class="logo-text">
+                    <h1>Sun Dermatology</h1>
+                    <span>Panama City, Florida</span>
+                </div>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="../index.html#services">Services</a></li>
+                    <li><a href="../index.html#doctor">Dr. Sunseri</a></li>
+                    <li><a href="../mohs-surgery.html">Mohs Surgery</a></li>
+                    <li><a href="../cosmetic.html">Cosmetic</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="../contact.html" class="btn btn-primary">Book Appointment</a>
+        </div>
+    </header>
+    
+    <section class="page-hero">
+        <div class="container">
+            <h1>Dermatologist Near <span>Panama City Beach</span></h1>
+            <p>Sun Dermatology proudly serves Panama City Beach residents with comprehensive dermatology care. Board-certified dermatologist Dr. Jeremy Sunseri offers skin cancer treatment, Mohs surgery, and cosmetic procedures just minutes from PCB.</p>
+            <div class="distance-badge">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
+                Only 15 minutes from Panama City Beach
+            </div>
+        </div>
+    </section>
+    
+    <section class="content-section">
+        <div class="container">
+            <div class="content-grid">
+                <div class="content-text">
+                    <h2>Your Panama City Beach Dermatology Solution</h2>
+                    <p>Living in or visiting Panama City Beach? You don't have to travel far for expert dermatology care. Sun Dermatology is conveniently located just 15 minutes from the beaches, offering the full range of dermatology services.</p>
+                    <p>As Panama City Beach residents know, the Florida sun is both a blessing and a responsibility. With year-round UV exposure, regular skin checks and proper dermatology care are essential for beach-area residents.</p>
+                    <p>Dr. Jeremy Sunseri understands the unique skin care needs of coastal Florida residents and provides personalized treatment plans for:</p>
+                    <ul>
+                        <li>Skin cancer screening and early detection</li>
+                        <li>Sun damage and precancerous lesion treatment</li>
+                        <li>Mohs surgery for skin cancer removal</li>
+                        <li>Anti-aging treatments and cosmetic procedures</li>
+                        <li>Treatment of all skin conditions</li>
+                    </ul>
+                    <a href="../contact.html" class="btn btn-primary" style="margin-top: 20px;">Schedule Your Visit</a>
+                </div>
+                <div class="content-image">
+                    <img src="../images/panama-city-beach.jpg" alt="Panama City Beach Dermatologist - Sun Dermatology">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="content-section alt">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 20px;">
+                <h2 style="font-size: 36px; color: var(--deep-navy);">Services for Panama City Beach Residents</h2>
+                <p style="color: var(--text-muted);">Comprehensive dermatology care close to home</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Skin Cancer Screening</h3>
+                    <p>Regular skin checks are essential for beach residents. Early detection saves lives.</p>
+                    <a href="../skin-cancer.html">Learn More →</a>
+                </div>
+                <div class="service-card">
+                    <h3>Mohs Surgery</h3>
+                    <p>Fellowship-trained Mohs surgeon with 99% cure rate for skin cancer removal.</p>
+                    <a href="../mohs-surgery.html">Learn More →</a>
+                </div>
+                <div class="service-card">
+                    <h3>Sun Damage Treatment</h3>
+                    <p>Repair and prevent sun damage with photodynamic therapy and topical treatments.</p>
+                    <a href="../general-dermatology.html">Learn More →</a>
+                </div>
+                <div class="service-card">
+                    <h3>Botox & Fillers</h3>
+                    <p>Look refreshed and rejuvenated with expert cosmetic injections.</p>
+                    <a href="../cosmetic.html">Learn More →</a>
+                </div>
+                <div class="service-card">
+                    <h3>Laser Treatments</h3>
+                    <p>Advanced laser therapy for pigmentation, scarring, and skin resurfacing.</p>
+                    <a href="../laser-treatments.html">Learn More →</a>
+                </div>
+                <div class="service-card">
+                    <h3>General Dermatology</h3>
+                    <p>Treatment for acne, eczema, psoriasis, rosacea, and all skin conditions.</p>
+                    <a href="../general-dermatology.html">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="directions">
+        <div class="container">
+            <h2>Getting to Sun Dermatology from Panama City Beach</h2>
+            <div class="directions-content">
+                <div class="directions-text">
+                    <h3>Easy Access from PCB</h3>
+                    <p>Our office is a quick 15-minute drive from most Panama City Beach locations via the Hathaway Bridge (US-98).</p>
+                    <p><strong>From Panama City Beach:</strong></p>
+                    <p>1. Head north on FL-79 toward US-98<br>
+                    2. Cross the Hathaway Bridge into Panama City<br>
+                    3. Continue on US-98 and turn left onto Highway 231 North<br>
+                    4. Sun Dermatology will be on your right at 645 N HWY 231</p>
+                    <p><strong>Address:</strong><br>645 North HWY 231<br>Panama City, FL 32405</p>
+                    <p><strong>Phone:</strong> <a href="tel:8502153612">(850) 215-3612</a></p>
+                    <p><strong>Office Hours:</strong><br>Monday - Friday: 8:00 AM - 5:00 PM</p>
+                </div>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3432.8!2d-85.6591!3d30.1988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDExJzU1LjciTiA4NcKwMzknMzIuOCJX!5e0!3m2!1sen!2sus!4v1234567890" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="cta">
+        <div class="container">
+            <h2>Panama City Beach's Dermatology Choice</h2>
+            <p>Don't let distance keep you from expert skin care. Schedule your appointment at Sun Dermatology today.</p>
+            <a href="../contact.html" class="btn btn-primary">Schedule Appointment</a>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>© 2026 Sun Dermatology. All Rights Reserved. | 645 N HWY 231, Panama City, FL 32405 | <a href="tel:8502153612">(850) 215-3612</a></p>
+            <p style="margin-top: 10px;">Serving Panama City, Panama City Beach, Lynn Haven, Callaway, Springfield & Bay County, FL</p>
+        </div>
+    </footer>
+</body>
+</html>

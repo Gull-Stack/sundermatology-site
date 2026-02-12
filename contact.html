@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Sun Dermatology | Schedule Appointment | Panama City FL Dermatologist</title>
+    <meta name="description" content="Contact Sun Dermatology in Panama City, FL. Schedule your appointment with Dr. Jeremy Sunseri. Call (850) 215-3612 or request appointment online.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --sun-gold: #D4A836;
+            --sun-orange: #E8913A;
+            --warm-cream: #FDF8F3;
+            --deep-navy: #1a3a5c;
+            --text-dark: #2d3748;
+            --text-muted: #5a6a7a;
+            --white: #ffffff;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Open Sans', sans-serif; color: var(--text-dark); line-height: 1.6; }
+        h1, h2, h3, h4 { font-family: 'Playfair Display', serif; font-weight: 600; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        .top-bar {
+            background: var(--deep-navy);
+            color: var(--white);
+            padding: 10px 0;
+            font-size: 14px;
+        }
+        .top-bar .container { display: flex; justify-content: space-between; }
+        .top-bar a { color: var(--sun-gold); text-decoration: none; }
+        
+        header {
+            background: var(--white);
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+        header .container { display: flex; justify-content: space-between; align-items: center; }
+        
+        .logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+        .logo-icon {
+            width: 50px; height: 50px;
+            background: linear-gradient(135deg, var(--sun-gold), var(--sun-orange));
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+        }
+        .logo-icon svg { width: 30px; height: 30px; fill: var(--white); }
+        .logo-text h1 { font-size: 24px; color: var(--deep-navy); }
+        .logo-text span { font-size: 12px; color: var(--text-muted); }
+        
+        nav ul { display: flex; list-style: none; gap: 32px; }
+        nav a { text-decoration: none; color: var(--text-dark); font-weight: 500; }
+        nav a:hover { color: var(--sun-orange); }
+        
+        .btn {
+            display: inline-block; padding: 14px 28px; border-radius: 6px;
+            font-weight: 600; text-decoration: none; font-size: 15px;
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, var(--sun-gold), var(--sun-orange));
+            color: var(--white);
+        }
+        
+        /* Page Header */
+        .page-header {
+            background: linear-gradient(135deg, var(--deep-navy), #234b6e);
+            padding: 80px 0;
+            text-align: center;
+            color: var(--white);
+        }
+        .page-header h1 { font-size: 48px; margin-bottom: 16px; }
+        .page-header p { font-size: 18px; opacity: 0.9; }
+        
+        /* Contact Section */
+        .contact-section { padding: 80px 0; }
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+        }
+        
+        .contact-info h2 { font-size: 32px; color: var(--deep-navy); margin-bottom: 24px; }
+        .contact-info p { color: var(--text-muted); margin-bottom: 30px; }
+        
+        .info-card {
+            background: var(--warm-cream);
+            padding: 24px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+        }
+        .info-card svg { width: 28px; height: 28px; fill: var(--sun-orange); flex-shrink: 0; }
+        .info-card h3 { font-size: 18px; color: var(--deep-navy); margin-bottom: 8px; }
+        .info-card p, .info-card a { color: var(--text-muted); text-decoration: none; font-size: 15px; }
+        .info-card a:hover { color: var(--sun-orange); }
+        
+        /* Form */
+        .contact-form {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+        }
+        .contact-form h2 { font-size: 28px; color: var(--deep-navy); margin-bottom: 24px; }
+        
+        .form-group { margin-bottom: 20px; }
+        .form-group label {
+            display: block; margin-bottom: 8px;
+            font-weight: 500; color: var(--text-dark);
+        }
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%; padding: 14px 16px;
+            border: 1px solid #ddd; border-radius: 8px;
+            font-size: 15px; font-family: inherit;
+        }
+        .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+            outline: none; border-color: var(--sun-gold);
+        }
+        .form-group textarea { resize: vertical; min-height: 120px; }
+        
+        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        
+        .submit-btn {
+            width: 100%; padding: 16px;
+            background: linear-gradient(135deg, var(--sun-gold), var(--sun-orange));
+            color: var(--white);
+            border: none; border-radius: 8px;
+            font-size: 16px; font-weight: 600;
+            cursor: pointer;
+        }
+        .submit-btn:hover { transform: translateY(-2px); box-shadow: 0 4px 15px rgba(212,168,54,0.4); }
+        
+        /* Map */
+        .map-section { padding: 0 0 80px; }
+        .map-container {
+            border-radius: 16px; overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+        .map-container iframe { width: 100%; height: 450px; border: none; }
+        
+        /* Footer */
+        footer {
+            background: #0f2439;
+            color: var(--white);
+            padding: 40px 0;
+            text-align: center;
+        }
+        footer p { opacity: 0.7; font-size: 14px; }
+        footer a { color: var(--sun-gold); text-decoration: none; }
+        
+        @media (max-width: 768px) {
+            .contact-grid { grid-template-columns: 1fr; }
+            .form-row { grid-template-columns: 1fr; }
+            nav { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <div class="container">
+            <span>📍 645 North HWY 231, Panama City, FL 32405</span>
+            <span>Call us: <a href="tel:8502153612">(850) 215-3612</a></span>
+        </div>
+    </div>
+    
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2L8.5 8.5 2 12l6.5 3.5L12 22l3.5-6.5L22 12l-6.5-3.5L12 2z"/></svg>
+                </div>
+                <div class="logo-text">
+                    <h1>Sun Dermatology</h1>
+                    <span>Panama City, Florida</span>
+                </div>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#doctor">Dr. Sunseri</a></li>
+                    <li><a href="mohs-surgery.html">Mohs Surgery</a></li>
+                    <li><a href="cosmetic.html">Cosmetic</a></li>
+                    <li><a href="index.html#location">Location</a></li>
+                </ul>
+            </nav>
+            <a href="tel:8502153612" class="btn btn-primary">Call Now</a>
+        </div>
+    </header>
+    
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>Schedule your appointment with Panama City's trusted dermatologist</p>
+        </div>
+    </section>
+    
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Get in Touch</h2>
+                    <p>We're here to help with all your dermatology needs. Contact us today to schedule an appointment or ask any questions.</p>
+                    
+                    <div class="info-card">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                        <div>
+                            <h3>Our Location</h3>
+                            <p>645 North HWY 231<br>Panama City, FL 32405</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                        <div>
+                            <h3>Phone</h3>
+                            <p><a href="tel:8502153612">(850) 215-3612</a></p>
+                            <p>Fax: (850) 215-4533</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                        <div>
+                            <h3>Email</h3>
+                            <p><a href="mailto:reception@sunderm.com">reception@sunderm.com</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                        <div>
+                            <h3>Office Hours</h3>
+                            <p>Monday - Friday: 8:00 AM - 5:00 PM<br>Saturday - Sunday: Closed</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h2>Request an Appointment</h2>
+                    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Interested In</label>
+                            <select id="service" name="service">
+                                <option value="">Select a service...</option>
+                                <option value="skin-exam">Skin Cancer Screening</option>
+                                <option value="mohs">Mohs Surgery Consultation</option>
+                                <option value="general">General Dermatology</option>
+                                <option value="cosmetic">Cosmetic Consultation</option>
+                                <option value="botox">Botox/Fillers</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Please describe your reason for visit or any questions..."></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Request Appointment</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="map-section">
+        <div class="container">
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3432.8!2d-85.6591!3d30.1988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDExJzU1LjciTiA4NcKwMzknMzIuOCJX!5e0!3m2!1sen!2sus!4v1234567890" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>© 2026 Sun Dermatology. All Rights Reserved. | 645 N HWY 231, Panama City, FL 32405 | <a href="tel:8502153612">(850) 215-3612</a></p>
+        </div>
+    </footer>
+</body>
+</html>
